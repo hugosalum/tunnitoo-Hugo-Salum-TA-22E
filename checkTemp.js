@@ -7,3 +7,4 @@ function checkTemp(p1){
         console.log("1")
     }
 }
+checkTemp(19)
