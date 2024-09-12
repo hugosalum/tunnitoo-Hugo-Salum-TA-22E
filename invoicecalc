@@ -1,0 +1,40 @@
+item1= 500
+item2= 1000
+item3= 3000
+itemcount = 0
+itemnr= item1 
+
+state= prompt('what state?(ex: tx, ut, ca, al, nv):')
+
+itemnr = prompt('what item?:')
+
+itemcount = prompt('how many items?:')
+
+statetax = 0.0
+
+if (state = "tx"){
+    statetax = 0.0625 
+}   
+if (state = "ut"){
+    statetax = 0.0625 
+}   
+if (state = "ca"){
+    statetax = 0.0825 
+}   
+if (state = "al"){
+    statetax = 0.0625 
+}   
+if (state = "nv"){
+    statetax = 0.0625 
+}   
+
+
+total= itemnr* itemcount
+
+if (total=> 1000){
+    discounted = total* 0.03; 
+}
+if (total=>5000){
+    discounted = total*0.3;
+}
+
